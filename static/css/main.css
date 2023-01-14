@@ -1,0 +1,46 @@
+:root {
+    --color-primary: #002461;
+    --color-secondary: #000;
+    background-color: var(--color-primary);
+    color: #FFF;
+}
+
+section {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto;
+    grid-gap: 25px;
+}
+
+.logo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    /* max-width: 650px; */
+    background-color: #f1f1f1;
+}
+
+@media (max-width: 767px) {
+    .main {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .main {
+        grid-template-columns: auto auto;
+    }
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 1.5em;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+.title {}
