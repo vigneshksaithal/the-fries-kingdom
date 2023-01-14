@@ -76,8 +76,10 @@ p {
     justify-content: center;
     align-items: center;
     gap: 15px;
-    color: rgb(213, 213, 213);
+    color: #d9d9d9;
+    text-align: center;
 }
+
 
 a {
     text-decoration: none;
