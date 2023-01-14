@@ -9,7 +9,6 @@ section {
     display: grid;
     align-items: center;
     grid-template-columns: auto;
-    grid-gap: 25px;
 }
 
 .logo {
@@ -18,13 +17,19 @@ section {
     align-items: center;
     width: 100%;
     height: auto;
-    /* max-width: 650px; */
-    background-color: #f1f1f1;
 }
 
 @media (max-width: 767px) {
     .main {
         text-align: center;
+    }
+
+    section {
+        grid-gap: 30px;
+    }
+
+    .logo {
+        background-color: none;
     }
 }
 
@@ -32,6 +37,10 @@ section {
     .main {
         grid-template-columns: auto auto;
         max-height: 1vh;
+    }
+
+    .logo {
+        background-color: #FFF;
     }
 }
 
@@ -44,4 +53,6 @@ p {
     font-size: 1.25rem;
 }
 
-.title {}
+.main>.text {
+    text-align: center;
+}
