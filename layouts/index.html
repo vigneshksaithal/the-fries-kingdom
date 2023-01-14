@@ -4,10 +4,21 @@
         <img src="/images/logo.png" alt="logo" class="logo">
     </div>
     <div class="text__wrapper">
-        <h1 class="title">Welcome to The Fries Kingdom!</h1>
-        <p class="description">This is a website about me</p>
+        <h1 class="title">{{ .Site.Data.about.title }}</h1>
+        <p class="description">{{ .Site.Data.about.description }}</p>
+        <a class="social__icon"
+            href="https://www.google.com/maps/place/The+Fries+Kingdom/@12.9172697,77.4999853,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae3f1538f17511:0xe42730cb73a88158!8m2!3d12.9172697!4d77.4999853?hl=en-IN">
+            <p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                No 01, Mylsandra, Kengeri, Bengaluru, Karnataka 560060.
+            </p>
+        </a>
 
-        <div class="social__wrapper">
+        <div class="social__icon">
             <h3>Follow Us</h3>
             <a href="">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
