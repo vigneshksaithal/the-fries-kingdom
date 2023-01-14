@@ -8,7 +8,7 @@
 section {
     display: grid;
     align-items: center;
-    grid-template-columns: auto;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .logo {
@@ -22,6 +22,7 @@ section {
 @media (max-width: 767px) {
     .main {
         text-align: center;
+        padding: 1em;
     }
 
     section {
@@ -35,32 +36,53 @@ section {
 
 @media (min-width: 768px) {
     .main {
-        grid-template-columns: auto auto;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         max-height: 1vh;
     }
 
     .logo {
         background-color: #FFF;
     }
+
+    .text__wrapper {
+        padding: 5em;
+    }
 }
 
 h1 {
-    font-size: 2rem;
+    margin: 0 0 1em;
+    font-size: 3.25rem;
     line-height: 1.5em;
 }
 
 p {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
+    line-height: 1.5em;
 }
 
 .text__wrapper {
     text-align: center;
 }
 
-.social__wrapper {
+.description {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1.5em;
+    color: #d9d9d9;
+}
+
+.social__icon {
+    font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
     color: rgb(213, 213, 213);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFF;
 }
