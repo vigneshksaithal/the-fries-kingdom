@@ -53,6 +53,14 @@ p {
     font-size: 1.25rem;
 }
 
-.main>.text {
+.text__wrapper {
     text-align: center;
+}
+
+.social__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: rgb(213, 213, 213);
 }
