@@ -1,4 +1,4 @@
-# the-fries-kingdom
+# The Fries Kingdom
 
 ## Tech Stack
 
